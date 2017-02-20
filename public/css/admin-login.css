@@ -1,0 +1,74 @@
+body {
+	background: #fff;
+}
+
+#login {
+	width: 360px;
+}
+
+.login .message,
+.login #login_error {
+	border-left: 1px solid #f00;
+	border-right: 1px solid #f00;
+	border-bottom: 1px dotted #fff;
+	background: #ff6857;
+	text-align: center;
+
+}
+
+.login h1 a {
+	background-image: url('../img/logo.png');
+	background-size: cover;
+	width: 166px;
+	height: 57px;
+}
+
+.login form {
+	background: #f00;
+	border: 1px solid #f00;
+	border-top: 0;
+	margin-top: 0;
+}
+
+.login label {
+	color: 1000;
+}
+
+.wp-core-ui .button-primary:hover {
+	background: #71825F;
+}
+
+.wp-core-ui .button-primary {
+	background: #434A3C;
+	border-radius: 0;
+	border: 0;
+}
+
+.login-center {
+	margin: auto;
+	width: 320px;
+	padding: 16px 0;
+}
+
+.login #nav a,
+.login #backtoblog a,
+a {
+	color: #f00;
+	text-decoration: none;
+}
+
+.login-contact {
+	border: 1px solid #f00;
+	border-bottom: 0;
+	background: url('http://mike-pretzlaw.de/favicon.ico') center right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-right: 130px;
+	padding: 1em;
+	vertical-align: middle;
+}
+
+/* Remove yellow auto-complete background. */
+.login input:-webkit-autofill {
+	background: #fff !important;
+}

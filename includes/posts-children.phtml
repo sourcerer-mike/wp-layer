@@ -1,0 +1,30 @@
+<table>
+	<thead>
+	<tr>
+		<th>
+			<?php echo __( 'Bild', WP_LAYER_BASE_TEXTDOMAIN ) ?>
+		</th>
+		<th>
+			<?php echo __( 'Titel', WP_LAYER_BASE_TEXTDOMAIN ) ?>
+		</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	<?php foreach ( $children as $child ): ?>
+		<tr>
+			<td>
+				<a href="<?php echo get_edit_post_link($child->ID); ?>">
+					<?php echo get_the_post_thumbnail( $child->ID, 'list-medium' ) ?>
+				</a>
+			</td>
+			<td>
+				<a href="<?php echo get_edit_post_link($child->ID); ?>">
+					<?php echo get_the_title($child); ?>
+				</a>
+			</td>
+		</tr>
+	<?php endforeach ?>
+	</tbody>
+
+</table>
